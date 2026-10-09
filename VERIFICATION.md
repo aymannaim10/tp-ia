@@ -30,3 +30,7 @@ Un audit automatisé ne constitue pas une certification complète : aucune sessi
 
 ## Limites pédagogiques
 Jeux fictifs et très petits, séparation fixe volontaire. Aucune estimation de l’incertitude, causalité ou valeur immobilière réelle n’est revendiquée. L’étape 23 reste autonome.
+
+## Vérification en production
+Le 9 octobre 2026, la suite navigateur complète a également réussi sur https://tp-ia-lake.vercel.app : accès public sans authentification, téléchargements, copie, progression et sept audits axe sans violation détectée. Déploiement de production READY : dpl_4Xic7mfMjjyBrkNwwfFoVbUDvnst ; commit applicatif d651222701d1fee9250173125abb733f441506b4.
+L’adresse tp-ia.vercel.app n’a pas pu être rattachée : Vercel répond owned-on-other-team. La protection SSO des aperçus est conservée ; l’adresse de production attribuée est publique.

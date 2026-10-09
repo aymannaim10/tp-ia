@@ -32,3 +32,8 @@ Le script build ne publie ni tests ni dépendances. La configuration Vercel util
 ## Vérification
 Voir [VERIFICATION.md](VERIFICATION.md) pour les résultats et limites de la validation.
 Les polices sont chargées depuis Google Fonts avec une police système de repli.
+
+## Site publié
+https://tp-ia-lake.vercel.app
+
+L’adresse demandée tp-ia.vercel.app est déjà affectée à un projet d’une autre équipe. Son rattachement nécessite l’accès à cette équipe. La version publiée et testée est disponible à l’adresse ci-dessus.
