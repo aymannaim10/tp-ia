@@ -29,13 +29,13 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
  await page.locator('.correction summary').click();
  assert.notEqual(await page.locator('.correction').getAttribute('open'),null);
  await page.locator('.mentor summary').click();
- assert.notEqual(await page.locator('.mentor details').getAttribute('open'),null);
+ assert.notEqual(await page.locator('.mentor').getAttribute('open'),null);
  await page.locator('.correction summary').click();
  for(let i=1;i<=24;i++){
   await page.goto(base+'/#etape-'+i);
   await page.waitForFunction(n=>document.querySelector('.lesson-heading')?.textContent.includes('Étape '+String(n).padStart(2,'0')+' / 24'),i);
   assert.equal(await page.locator('.code-block').count(),1);
-  assert.ok((await page.locator('pre').innerText()).length>50);
+  assert.ok((await page.locator('.code-block pre').innerText()).length>50);
   assert.equal(await page.locator('.analysis-panel').count(),1);
   assert.equal(await page.locator('.correction').getAttribute('open'),null);
  }

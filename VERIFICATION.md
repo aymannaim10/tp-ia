@@ -34,3 +34,8 @@ Jeux fictifs et très petits, séparation fixe volontaire. Aucune estimation de 
 ## Vérification en production
 Le 9 octobre 2026, la suite navigateur complète a également réussi sur https://tp-ia-lake.vercel.app : accès public sans authentification, téléchargements, copie, progression et sept audits axe sans violation détectée. Déploiement de production READY : dpl_4Xic7mfMjjyBrkNwwfFoVbUDvnst ; commit applicatif d651222701d1fee9250173125abb733f441506b4.
 L’adresse tp-ia.vercel.app n’a pas pu être rattachée : Vercel répond owned-on-other-team. La protection SSO des aperçus est conservée ; l’adresse de production attribuée est publique.
+
+## Refonte du laboratoire visuel
+Ajout de sorties de référence pour les 24 questions et de trois figures SVG produites par Matplotlib à partir du code exact des questions 7, 15 et 20. Les sorties ne sont pas des images inventées ; la trame d’interface Jupyter est une présentation pédagogique.
+
+Les tests complémentaires vérifient la MSE initiale (1 650), la MSE ajustée (145,47), les signes des résidus, une prédiction à 200 m² (1 751,74 kDH), l’effet du prix atypique, la réinitialisation, les commandes clavier et la copie du Markdown. Les 14 états complémentaires audités avec axe ne présentent aucune violation détectée après correction. L’exécution des 24 extraits Python et la validation du notebook restent réussies.

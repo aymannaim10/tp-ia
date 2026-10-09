@@ -6,7 +6,10 @@
   "scripts": {
     "start": "node server.cjs",
     "test": "node tests/ui.cjs",
-    "test:python": "python tests/verify_python.py"
+    "test:python": "python tests/verify_python.py",
+    "test:lab": "node tests/lab.cjs",
+    "outputs": "python tests/generate_outputs.py",
+    "build": "node build.cjs"
   },
   "devDependencies": {
     "@playwright/test": "1.58.2",

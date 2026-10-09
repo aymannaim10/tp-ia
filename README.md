@@ -13,7 +13,7 @@ Les données sont **fictives**. Surfaces en m², prix en milliers de dirhams (kD
 ## Développement
 Site statique HTML/CSS/JavaScript, sans dépendance de production.
 - `npm start` : aperçu sur http://127.0.0.1:4173.
-- `node build.cjs` : copie uniquement les sept fichiers publics dans dist/.
+- `node build.cjs` : copie uniquement les neuf fichiers publics et les figures SVG dans dist/.
 - `npm install`, puis `npx playwright install chromium` pour les tests.
 - `npm test` : tests fonctionnels et audit axe WCAG 2.1 A/AA (serveur local lancé).
 - `npm run test:python` : exécute les 24 cellules dans l’ordre avec Python, numpy, pandas et matplotlib ; valide le notebook si nbformat est disponible.
@@ -37,3 +37,13 @@ Les polices sont chargées depuis Google Fonts avec une police système de repli
 https://tp-ia-lake.vercel.app
 
 L’adresse demandée tp-ia.vercel.app est déjà affectée à un projet d’une autre équipe. Son rattachement nécessite l’accès à cette équipe. La version publiée et testée est disponible à l’adresse ci-dessus.
+
+## Présentation du laboratoire
+L’énoncé est conçu pour les étudiants : consignes courtes, code fourni, résultats de référence visibles, corrections et repères repliés. Le compte rendu reste leur travail personnel dans Jupyter.
+
+- `outputs.js` et `figures/` : sorties et graphiques issus de l’exécution réelle des 24 extraits ; régénération avec `npm run outputs`.
+- `lab.js` : quatre illustrations interactives (pente/constante, résidus, extrapolation, observation atypique), avec tableau de données accessible.
+- Onglet Compte rendu : exemple de cellules Markdown, code, sortie et interprétation ; bascule source/rendu et copie du Markdown.
+- `npm run test:lab` : tests des quatre modes, calculs, contrôles clavier, sorties et audit axe de 14 états supplémentaires.
+
+Les figures utilisent JavaScript pour illustrer les formules ; elles ne constituent pas un environnement Python. Les prix, la séparation et les paramètres correspondent au TP. Le modèle du notebook n’est jamais modifié par les interactions sur le site.
