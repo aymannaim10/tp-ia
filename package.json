@@ -1,0 +1,15 @@
+{
+  "name": "tp-ia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TP universitaire de régression linéaire avec Python et Jupyter",
+  "scripts": {
+    "start": "node server.cjs",
+    "test": "node tests/ui.cjs",
+    "test:python": "python tests/verify_python.py"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "@axe-core/playwright": "4.11.1"
+  }
+}
